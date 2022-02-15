@@ -85,7 +85,8 @@ a.skip {
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 3 code here*/
-  margin-left: -500px;
+  position: absolute;
+  left: -500px;
 }
 
 /* Requirement 4 code here*/
@@ -98,12 +99,12 @@ nav a:focus {
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-auto-rows: auto;
   row-gap: 30px;
 }
 /* Requirements 6-10 here: */
 .intro {
-  background: #858585 url("../images/header.jpg");
+  background-color: #858585;
+  background-image: url("../images/header.jpg");
 
   min-height: 400px;
 
@@ -125,7 +126,7 @@ nav a:focus {
 .method-image,
 .contact-image {
   grid-column: 1 / span 3;
-  max-height: 500ps;
+  max-height: 500px;
   overflow: hidden;
 }
 
@@ -154,7 +155,7 @@ img {
 
 .text {
   align-self: center;
-  max-height: 25%;
+  max-height: 25vh;
   overflow: scroll;
 }
 
@@ -174,7 +175,7 @@ img {
   /* Requirements 12-15 here: */
 
   a.skip:focus {
-    margin-left: 0;
+    left: 0px;
     outline: none;
     margin-top: 20px;
     border-top: 2px solid yellow;
